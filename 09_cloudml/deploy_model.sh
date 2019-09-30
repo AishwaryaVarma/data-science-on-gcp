@@ -3,12 +3,16 @@
 TF_VERSION="1.4"   # CHANGE as needed
 
 if [ "$#" -ne 2 ]; then
+
     echo "Usage: ./deploy_model.sh bucket-name bucket-region"
+    
     exit
 fi
 
+
 BUCKET=$1
 REGION=$2
+
 
 MODEL_NAME="flights"
 MODEL_VERSION="v1"
